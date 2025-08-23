@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Services.Models
 {
-    public class Payment
+    public class PaymentMethod
     {
         public int IdPayment { get; set; }
         public int IdContract { get; set; }
