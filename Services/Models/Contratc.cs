@@ -18,12 +18,12 @@ namespace Services.Models
         public DateTime EndDate { get; set; }
         public decimal Amount { get; set; }
         public ContractStatusEnum Status { get; set; } = ContractStatusEnum.Active;
-        public bool Deleted { get; set; } = false;
+        public bool IsDeleted { get; set; } = false;
 
         public Property Property { get; set; }
         public Client Client { get; set; }
         public Employee Employee { get; set; }
-        public ICollection<Payment> Payments { get; set; }
+        
     }
 
 }

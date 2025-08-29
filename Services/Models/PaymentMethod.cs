@@ -15,7 +15,7 @@ namespace Services.Models
         public decimal Amount { get; set; }
         public PaymentMethodEnum PaymentMethodId { get; set; } = PaymentMethodEnum.Cash;
         public string Note { get; set; }
-        public bool Deleted { get; set; } = false;
+        public bool IsDeleted { get; set; } = false;
         public Contract Contract { get; set; }
         
     }

@@ -8,9 +8,9 @@ namespace Services.Enums
 {
     public enum PropertyTypeEnum
     {
-        House, 
-        Apartment,
-        Land, 
-        Local
+        House,      // Casa
+        Apartment,  // Departamento
+        Land,       // Terreno
+        Local       // Local comercial
     }
 }
