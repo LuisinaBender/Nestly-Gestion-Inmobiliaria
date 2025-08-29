@@ -10,13 +10,13 @@ namespace Services.Models
     public class PaymentMethod
     {
         public int IdPayment { get; set; }
-        public int IdContract { get; set; }
+        public int IdTransactions { get; set; }
         public DateTime PaymentDate { get; set; }
         public decimal Amount { get; set; }
         public PaymentMethodEnum PaymentMethodId { get; set; } = PaymentMethodEnum.Cash;
         public string Note { get; set; }
         public bool IsDeleted { get; set; } = false;
-        public Contract Contract { get; set; }
+        public Transactions Transactions { get; set; }
         
     }
 }

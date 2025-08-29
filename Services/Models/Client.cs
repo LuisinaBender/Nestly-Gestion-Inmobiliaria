@@ -17,7 +17,7 @@ namespace Services.Models
         public string Email { get; set; }
         public bool IsDeleted { get; set; } = false;
 
-        public ICollection<Contract> Contracts { get; set; }
+        public ICollection<Transactions> Transactions { get; set; }
     }
 
 }

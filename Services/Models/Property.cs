@@ -21,6 +21,6 @@ namespace Services.Models
         public int IdOwner { get; set; }
         public bool IsDeleted { get; set; } = false;
         public Owner Owner { get; set; }
-        public ICollection<Contract> Contracts { get; set; }
+        public ICollection<Transactions> Transactions { get; set; }
     }
 }

@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Services.Enums
 {
-    public enum ContractStatusEnum
+    public enum TransactionsTypeEnum
     {
-        Active,      // Activo
-        Finished,    // Finalizado
-        Cancelled    // Cancelado
+        Rent,        // Alquiler
+        Sale         // Venta
     }
 }

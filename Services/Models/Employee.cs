@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Services.Enums;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Services.Enums;
+using System.Transactions;
 
 namespace Services.Models
 {
@@ -19,6 +20,6 @@ namespace Services.Models
         public EmployeeRoleEnum Role { get; set; } = EmployeeRoleEnum.Agent;
         public bool IsDeleted { get; set; } = false;
 
-        public ICollection<Contract> Contracts { get; set; }
+        public ICollection<Transactions> Transactions { get; set; }
     }
 }
