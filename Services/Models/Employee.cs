@@ -20,6 +20,6 @@ namespace Services.Models
         public EmployeeRoleEnum Role { get; set; } = EmployeeRoleEnum.Agent;
         public bool IsDeleted { get; set; } = false;
 
-        public ICollection<Transactions> Transactions { get; set; }
+        public ICollection<Transaction> Transaction { get; set; }
     }
 }

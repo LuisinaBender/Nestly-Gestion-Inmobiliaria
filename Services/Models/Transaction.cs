@@ -1,18 +1,20 @@
 ﻿using Services.Enums;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Services.Models
 {
-    public class Transactions   
+    public class Transaction   
     {
-        public int IdTransactions { get; set; }
-        public int IdProperty { get; set; }
-        public int IdClient { get; set; }
-        public int IdEmployee { get; set; }
+        [Key]
+        public int TransactionId { get; set; }
+        public int PropertyId { get; set; }
+        public int ClientId { get; set; }
+        public int EmployeeId { get; set; }
         public TransactionsTypeEnum Type { get; set; } = TransactionsTypeEnum.Rent;
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }

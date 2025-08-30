@@ -18,9 +18,9 @@ namespace Services.Models
         public int Room { get; set; }              // cantidad de ambientes
         public decimal Price { get; set; }
         public PropertyStatusEnum Status { get; set; } = PropertyStatusEnum.Available;
-        public int IdOwner { get; set; }
+        public int OwnerId { get; set; }
         public bool IsDeleted { get; set; } = false;
         public Owner Owner { get; set; }
-        public ICollection<Transactions> Transactions { get; set; }
+        public ICollection<Transaction> Transaction { get; set; }
     }
 }
